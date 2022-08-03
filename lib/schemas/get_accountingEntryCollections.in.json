@@ -1,0 +1,24 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        },
+        "type": {
+            "required": false,
+            "type": "integer",
+            "example": 0,
+            "enum": [
+                0,
+                1
+            ]
+        },
+        "year": {
+            "required": false,
+            "type": "integer",
+            "example": 2019
+        }
+    }
+}

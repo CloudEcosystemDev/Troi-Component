@@ -1,0 +1,10 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        }
+    }
+}

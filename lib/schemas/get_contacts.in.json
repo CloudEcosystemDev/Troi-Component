@@ -1,0 +1,57 @@
+{
+    "type": "object",
+    "properties": {
+        "syncItem": {
+            "type": "boolean",
+            "example": false
+        },
+        "from": {
+            "type": "integer",
+            "example": 0
+        },
+        "size": {
+            "type": "integer",
+            "example": 100
+        },
+        "since": {
+            "type": "string",
+            "example": 0
+        },
+        "favoritesOnly": {
+            "type": "boolean",
+            "example": true
+        },
+        "contactType": {
+            "type": "string",
+            "enum": [
+                "ApiContact:Person",
+                "ApiContact:Department",
+                "ApiContact:Company"
+            ],
+            "example": "ApiContact:Person"
+        },
+        "search": {
+            "type": "string",
+            "example": "Troi"
+        },
+        "searchField": {
+            "type": "string"
+        },
+        "withCustomFields": {
+            "type": "integer",
+            "example": 1
+        },
+        "parentId": {
+            "type": "integer",
+            "example": 1
+        },
+        "isAssociatedWithCustomer": {
+            "type": "boolean",
+            "example": false
+        },
+        "onlyInactive": {
+            "type": "boolean",
+            "example": false
+        }
+    }
+}

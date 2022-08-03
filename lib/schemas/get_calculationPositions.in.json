@@ -1,0 +1,54 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        },
+        "projectId": {
+            "type": "integer",
+            "example": 1
+        },
+        "subprojectId": {
+            "type": "integer",
+            "example": 1
+        },
+        "search": {
+            "type": "string",
+            "example": "Car"
+        },
+        "timeRecording": {
+            "type": "boolean",
+            "example": true
+        },
+        "favoritesOnly": {
+            "type": "boolean",
+            "example": true
+        },
+        "withoutHourClosed": {
+            "type": "boolean",
+            "example": true
+        },
+        "ree_date": {
+            "type": "string",
+            "example": "20190101"
+        },
+        "projectStatusId": {
+            "type": "integer",
+            "example": 1
+        },
+        "bookKeeping": {
+            "type": "boolean",
+            "example": true
+        },
+        "projectIds": {
+            "type": "string",
+            "example": "1,2,3"
+        },
+        "issueTrackerProjectKey": {
+            "type": "string",
+            "example": "TROI-12345"
+        }
+    }
+}

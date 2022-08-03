@@ -1,0 +1,38 @@
+{
+    "type": "object",
+    "properties": {
+        "start": {
+            "required": true,
+            "type": "string",
+            "example": 20200101
+        },
+        "end": {
+            "required": true,
+            "type": "string",
+            "example": 20201231
+        },
+        "search_key": {
+            "type": "string",
+            "example": "meeting"
+        },
+        "owner_employee_id": {
+            "type": "integer",
+            "example": 33
+        },
+        "type": {
+            "type": "string",
+            "enum": [
+                "R",
+                "H",
+                "G",
+                "P",
+                "T"
+            ],
+            "example": "R"
+        },
+        "withoutAbsences": {
+            "type": "boolean",
+            "example": false
+        }
+    }
+}

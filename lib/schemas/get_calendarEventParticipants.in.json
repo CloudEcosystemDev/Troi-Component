@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "calendarEventId": {
+            "type": "integer",
+            "example": 1
+        },
+        "employeeId": {
+            "type": "integer",
+            "example": 1
+        }
+    }
+}

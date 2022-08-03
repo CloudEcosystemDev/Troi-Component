@@ -1,0 +1,133 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "Client": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "type": "string",
+                        "example": "ApiExample"
+                    },
+                    "Name": {
+                        "type": "string",
+                        "example": "Example"
+                    },
+                    "IsFavorite": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "IsPrintable": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "ParentPath": {
+                        "type": "string",
+                        "example": null
+                    },
+                    "ReeEmployeeId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeCpId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeSubProjectId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeProjectId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeQuantity": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeDate": {
+                        "type": "object",
+                        "example": null
+                    },
+                    "ReeServiceId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "id": {
+                        "type": "integer",
+                        "example": 33
+                    },
+                    "Id": {
+                        "type": "integer",
+                        "example": 33
+                    },
+                    "Path": {
+                        "type": "string",
+                        "example": "/exampleItem/33"
+                    },
+                    "ETag": {
+                        "type": "integer",
+                        "example": 20190424205858
+                    },
+                    "IsDeleted": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "ClassName": {
+                        "type": "string",
+                        "example": "ApiSyncItem"
+                    }
+                }
+            },
+            "FromDate": {
+                "type": "string",
+                "example": "1899-11-30T00:00:00.000Z"
+            },
+            "TillDate": {
+                "type": "string",
+                "example": "1899-11-30T00:00:00.000Z"
+            },
+            "IsLocked": {
+                "type": "boolean",
+                "example": false
+            },
+            "CreateEmployee": {
+                "type": "object",
+                "example": null
+            },
+            "CreateDate": {
+                "type": "string",
+                "example": "1899-11-30T00:00:00.000Z"
+            },
+            "Type": {
+                "type": "integer",
+                "example": 2
+            },
+            "id": {
+                "type": "integer",
+                "example": 1
+            },
+            "Id": {
+                "type": "integer",
+                "example": 1
+            },
+            "Path": {
+                "type": "string",
+                "example": "/accountingEntryCollections/1"
+            },
+            "ETag": {
+                "type": "string",
+                "example": null
+            },
+            "IsDeleted": {
+                "type": "boolean",
+                "example": false
+            },
+            "ClassName": {
+                "type": "string",
+                "example": "ApiAccountingEntryCollection"
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "start": {
+            "required": true,
+            "type": "integer",
+            "example": 20190401
+        },
+        "end": {
+            "required": true,
+            "type": "integer",
+            "example": 20190401
+        },
+        "employeeId": {
+            "required": false,
+            "type": "integer",
+            "example": 33
+        }
+    }
+}

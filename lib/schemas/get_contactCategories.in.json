@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "contactId": {
+            "type": "integer",
+            "example": 1
+        },
+        "categoryId": {
+            "type": "integer",
+            "example": 1
+        },
+        "size": {
+            "type": "integer",
+            "example": 50
+        },
+        "from": {
+            "type": "integer",
+            "example": 100
+        }
+    }
+}

@@ -1,0 +1,227 @@
+{
+    "type": "object",
+    "properties": {
+        "Start": {
+            "type": "string",
+            "example": "2019-04-24 00:00:00"
+        },
+        "End": {
+            "type": "string",
+            "example": "2019-04-24 23:59:59"
+        },
+        "Subject": {
+            "type": "string",
+            "example": "Urlaub"
+        },
+        "Description": {
+            "type": "string",
+            "example": "In den Urlaub hinein!"
+        },
+        "Destination": {
+            "type": "object",
+            "example": null
+        },
+        "Employee": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string",
+                    "example": "ApiExample"
+                },
+                "Name": {
+                    "type": "string",
+                    "example": "Example"
+                },
+                "IsFavorite": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "IsPrintable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ParentPath": {
+                    "type": "string",
+                    "example": null
+                },
+                "ReeEmployeeId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeCpId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeSubProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeQuantity": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeDate": {
+                    "type": "object",
+                    "example": null
+                },
+                "ReeServiceId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Path": {
+                    "type": "string",
+                    "example": "/exampleItem/33"
+                },
+                "ETag": {
+                    "type": "integer",
+                    "example": 20190424205858
+                },
+                "IsDeleted": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiSyncItem"
+                }
+            }
+        },
+        "absenceType": {
+            "type": "object",
+            "properties": {
+                "absenceTypeId": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "absenceTypeDescription": {
+                    "type": "string",
+                    "example": "Urlaub"
+                },
+                "absenceTypeAbbrevation": {
+                    "type": "string",
+                    "example": "URL"
+                },
+                "absenceTypeColor": {
+                    "type": "string",
+                    "example": "#ff0088"
+                },
+                "absenceTypeAllowed": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "absenceTypeSystem": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeFreeday": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeFreedayIgnore": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeBusinessTrip": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeIcon": {
+                    "type": "string",
+                    "example": "images/abw_holiday.gif"
+                },
+                "absenceTypeHoliday": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "absenceTypeIll": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeWorkTime": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "absenceTypeAllowResourceCalculation": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeAllowTravelCostRecording": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeBackgroundColor": {
+                    "type": "string",
+                    "example": "0096ff"
+                },
+                "absenceTypeIsAnonymous": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeIsActive": {
+                    "type": "boolean",
+                    "example": true
+                },
+                "absenceTypeCompanyShutdown": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "absenceTypeCountToProjectBalance": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiAbsenceType"
+                }
+            }
+        },
+        "halfDay": {
+            "type": "integer",
+            "example": 0
+        },
+        "absenceUnit": {
+            "type": "integer",
+            "example": 0
+        },
+        "absenceHours": {
+            "type": "integer",
+            "example": 8
+        },
+        "id": {
+            "type": "integer",
+            "example": 12
+        },
+        "Id": {
+            "type": "integer",
+            "example": 12
+        },
+        "Path": {
+            "type": "string",
+            "example": "/absences/12"
+        },
+        "ETag": {
+            "type": "string",
+            "example": "20190424205928"
+        },
+        "IsDeleted": {
+            "type": "boolean",
+            "example": false
+        },
+        "ClassName": {
+            "type": "string",
+            "example": "ApiAbsence"
+        }
+    }
+}

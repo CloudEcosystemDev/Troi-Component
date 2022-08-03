@@ -1,0 +1,187 @@
+{
+    "type": "object",
+    "properties": {
+        "Name": {
+            "type": "string",
+            "example": "Test"
+        },
+        "Category": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "type": "string",
+                        "example": "ApiExample"
+                    },
+                    "Name": {
+                        "type": "string",
+                        "example": "Example"
+                    },
+                    "IsFavorite": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "IsPrintable": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "ParentPath": {
+                        "type": "string",
+                        "example": null
+                    },
+                    "ReeEmployeeId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeCpId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeSubProjectId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeProjectId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeQuantity": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeDate": {
+                        "type": "object",
+                        "example": null
+                    },
+                    "ReeServiceId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "id": {
+                        "type": "integer",
+                        "example": 33
+                    },
+                    "Id": {
+                        "type": "integer",
+                        "example": 33
+                    },
+                    "Path": {
+                        "type": "string",
+                        "example": "/exampleItem/33"
+                    },
+                    "ETag": {
+                        "type": "integer",
+                        "example": 20190424205858
+                    },
+                    "IsDeleted": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "ClassName": {
+                        "type": "string",
+                        "example": "ApiSyncItem"
+                    }
+                }
+            }
+        },
+        "Contact": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Type": {
+                        "type": "string",
+                        "example": "ApiExample"
+                    },
+                    "Name": {
+                        "type": "string",
+                        "example": "Example"
+                    },
+                    "IsFavorite": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "IsPrintable": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "ParentPath": {
+                        "type": "string",
+                        "example": null
+                    },
+                    "ReeEmployeeId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeCpId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeSubProjectId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeProjectId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeQuantity": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "ReeDate": {
+                        "type": "object",
+                        "example": null
+                    },
+                    "ReeServiceId": {
+                        "type": "integer",
+                        "example": 0
+                    },
+                    "id": {
+                        "type": "integer",
+                        "example": 33
+                    },
+                    "Id": {
+                        "type": "integer",
+                        "example": 33
+                    },
+                    "Path": {
+                        "type": "string",
+                        "example": "/exampleItem/33"
+                    },
+                    "ETag": {
+                        "type": "integer",
+                        "example": 20190424205858
+                    },
+                    "IsDeleted": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "ClassName": {
+                        "type": "string",
+                        "example": "ApiSyncItem"
+                    }
+                }
+            }
+        },
+        "Id": {
+            "type": "integer",
+            "example": 1
+        },
+        "Path": {
+            "type": "string",
+            "example": "/contactCategories/1"
+        },
+        "ETag": {
+            "type": "string"
+        },
+        "IsDeleted": {
+            "type": "boolean"
+        },
+        "ClassName": {
+            "type": "string",
+            "example": "ApiContactCategory"
+        }
+    }
+}

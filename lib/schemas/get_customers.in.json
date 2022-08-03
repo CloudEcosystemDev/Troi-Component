@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        },
+        "syncItem": {
+            "type": "boolean",
+            "example": false
+        },
+        "isActive": {
+            "type": "boolean",
+            "example": true
+        }
+    }
+}

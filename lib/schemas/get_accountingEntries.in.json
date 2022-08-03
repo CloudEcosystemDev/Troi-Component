@@ -1,0 +1,25 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        },
+        "cpId": {
+            "required": false,
+            "type": "integer",
+            "example": 1
+        },
+        "projectId": {
+            "required": false,
+            "type": "integer",
+            "example": 1
+        },
+        "accountingEntryCollectionId": {
+            "required": false,
+            "type": "integer",
+            "example": 1
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        },
+        "accountGroupId": {
+            "required": false,
+            "type": "integer",
+            "example": 1
+        },
+        "account_is_cash_or_bank": {
+            "required": false,
+            "type": "boolean",
+            "example": true
+        }
+    }
+}

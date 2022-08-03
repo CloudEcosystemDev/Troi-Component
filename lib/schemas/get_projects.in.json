@@ -1,0 +1,80 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        },
+        "from": {
+            "type": "integer",
+            "example": 1
+        },
+        "size": {
+            "type": "integer",
+            "example": 1
+        },
+        "since": {
+            "type": "string",
+            "example": 20110722153556
+        },
+        "syncItem": {
+            "type": "boolean",
+            "example": false
+        },
+        "customerId": {
+            "type": "string",
+            "example": 1
+        },
+        "customerIsActive": {
+            "type": "boolean",
+            "example": true
+        },
+        "projectIsInProcess": {
+            "type": "boolean",
+            "example": true
+        },
+        "projectStatusId": {
+            "oneOf": [
+                {
+                    "type": "integer",
+                    "example": 1
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "integer",
+                        "example": 1
+                    }
+                }
+            ]
+        },
+        "projectTypeId": {
+            "oneOf": [
+                {
+                    "type": "integer",
+                    "example": 1
+                },
+                {
+                    "type": "array",
+                    "items": {
+                        "type": "integer",
+                        "example": 1
+                    }
+                }
+            ]
+        },
+        "projectLeaderId": {
+            "type": "integer",
+            "example": 1
+        },
+        "search": {
+            "type": "string",
+            "example": "Website"
+        },
+        "extendedObject": {
+            "type": "boolean",
+            "example": false
+        }
+    }
+}

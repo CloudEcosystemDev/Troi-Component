@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        },
+        "calculationPositionId": {
+            "required": false,
+            "type": "integer",
+            "example": 1
+        },
+        "projectId": {
+            "required": false,
+            "type": "integer",
+            "example": 1
+        },
+        "subprojectId": {
+            "required": false,
+            "type": "integer",
+            "example": 1
+        },
+        "startDate": {
+            "required": false,
+            "type": "string",
+            "example": 20160101
+        },
+        "endDate": {
+            "required": false,
+            "type": "string",
+            "example": 20160120
+        },
+        "extendedObject": {
+            "required": false,
+            "type": "boolean",
+            "example": true
+        },
+        "fillsyncitems": {
+            "required": false,
+            "type": "boolean",
+            "example": true
+        }
+    }
+}

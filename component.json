@@ -1,0 +1,1037 @@
+{
+    "title": "Troi API",
+    "description": "This is the official API documentation of Troi.\n\n# Authentication\n\nTroi offers basic auth for authentication.\n\n<security-definitions />\n",
+    "docsUrl": "https://confluence.troi.de/display/TG/TROI+API",
+    "url": "https://{customer}.troi.software/api/v2/rest",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://{customer}.troi.software/api/v2/rest",
+                    "http://{host}/api/v2/rest",
+                    "https://{host}/api/v2/rest",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            },
+            "auth_username": {
+                "label": "Username (basicAuth)",
+                "viewClass": "TextFieldView",
+                "note": "Login is via Basic Auth using the Troi credentials. It is important that the password is hashed in advance with md5.\n\nAs an example:\n\nusername: `troi`\n\npassword: `nopass`\n\n\n\nOn api side:\n\nusername: `troi`\n\npassword (md5(nopass)): `0945fc9611f55fd0e183fb8b044f1afe`\n"
+            },
+            "auth_password": {
+                "label": "Password (basicAuth)",
+                "viewClass": "TextFieldView",
+                "note": "Login is via Basic Auth using the Troi credentials. It is important that the password is hashed in advance with md5.\n\nAs an example:\n\nusername: `troi`\n\npassword: `nopass`\n\n\n\nOn api side:\n\nusername: `troi`\n\npassword (md5(nopass)): `0945fc9611f55fd0e183fb8b044f1afe`\n"
+            }
+        }
+    },
+    "triggers": {
+        "lookup": {
+            "main": "./lib/lookups/lookup.js",
+            "title": "Function to run a lookup",
+            "description": "Function to call an internal trigger or action"
+        },
+        "get_absences": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all absences for the current employee given Start Date and End Date",
+            "description": "Fetch all absences for the current employee given Start Date and End Date",
+            "callParams": {
+                "pathName": "/absences",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_absences.in.json",
+                "out": "./lib/schemas/get_absences.out.json"
+            }
+        },
+        "get_accountGroups": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all account groups for the given clientId",
+            "description": "Fetch all account groups for the given clientId",
+            "callParams": {
+                "pathName": "/accountGroups",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_accountGroups.in.json",
+                "out": "./lib/schemas/get_accountGroups.out.json"
+            }
+        },
+        "get_accountingEntries": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all Accounting Entries for the given clientId",
+            "description": "Fetch all Accounting Entries for the given clientId",
+            "callParams": {
+                "pathName": "/accountingEntries",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_accountingEntries.in.json",
+                "out": "./lib/schemas/get_accountingEntries.out.json"
+            }
+        },
+        "get_accountingEntryCollections": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all accounting entry collections for the given clientId",
+            "description": "Fetch all accounting entry collections for the given clientId",
+            "callParams": {
+                "pathName": "/accountingEntryCollections",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_accountingEntryCollections.in.json",
+                "out": "./lib/schemas/get_accountingEntryCollections.out.json"
+            }
+        },
+        "get_accounts": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all Accounts for the given clientId",
+            "description": "Fetch all Accounts for the given clientId",
+            "callParams": {
+                "pathName": "/accounts",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_accounts.in.json",
+                "out": "./lib/schemas/get_accounts.out.json"
+            }
+        },
+        "get_bookingYears": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all Booking Years for the given client ID",
+            "description": "Fetch all Booking Years for the given client ID",
+            "callParams": {
+                "pathName": "/bookingYears",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_bookingYears.in.json",
+                "out": "./lib/schemas/get_bookingYears.out.json"
+            }
+        },
+        "get_calendarEvents": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all calendar events at the given range",
+            "description": "Fetch all calendar events at the given range",
+            "callParams": {
+                "pathName": "/calendarEvents",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_calendarEvents.in.json",
+                "out": "./lib/schemas/get_calendarEvents.out.json"
+            }
+        },
+        "get_calendarEventParticipants": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all calendar event participants",
+            "description": "Fetch all calendar event participants",
+            "callParams": {
+                "pathName": "/calendarEventParticipants",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_calendarEventParticipants.in.json",
+                "out": "./lib/schemas/get_calendarEventParticipants.out.json"
+            }
+        },
+        "get_billings_hours": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all billings for the given parameter",
+            "description": "Fetch all billings for the given parameter",
+            "callParams": {
+                "pathName": "/billings/hours",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_billings_hours.in.json",
+                "out": "./lib/schemas/get_billings_hours.out.json"
+            }
+        },
+        "get_projects": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all projects from given client",
+            "description": "Fetch all projects from given client",
+            "callParams": {
+                "pathName": "/projects",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_projects.in.json",
+                "out": "./lib/schemas/get_projects.out.json"
+            }
+        },
+        "get_contacts": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all contacts",
+            "description": "Fetch all contacts",
+            "callParams": {
+                "pathName": "/contacts",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_contacts.in.json",
+                "out": "./lib/schemas/get_contacts.out.json"
+            }
+        },
+        "get_clients": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all Tenants (formerly Clients)",
+            "description": "Fetch all Tenants (formerly Clients)",
+            "callParams": {
+                "pathName": "/clients",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_clients.in.json",
+                "out": "./lib/schemas/get_clients.out.json"
+            }
+        },
+        "get_customers": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all customers for the given client ID",
+            "description": "Fetch all customers for the given client ID",
+            "callParams": {
+                "pathName": "/customers",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_customers.in.json",
+                "out": "./lib/schemas/get_customers.out.json"
+            }
+        },
+        "get_suppliers": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all suppliers from given client",
+            "description": "Fetch all suppliers from given client",
+            "callParams": {
+                "pathName": "/suppliers",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_suppliers.in.json",
+                "out": "./lib/schemas/get_suppliers.out.json"
+            }
+        },
+        "get_contactCategories": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all contact categories",
+            "description": "Fetch all contact categories",
+            "callParams": {
+                "pathName": "/contactCategories",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_contactCategories.in.json",
+                "out": "./lib/schemas/get_contactCategories.out.json"
+            }
+        },
+        "get_calculationPositions": {
+            "main": "./lib/triggers/trigger.js",
+            "title": "Fetch all calculation positions for the given client ID",
+            "description": "Fetch all calculation Positions for the given client ID",
+            "callParams": {
+                "pathName": "/calculationPositions",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_calculationPositions.in.json",
+                "out": "./lib/schemas/get_calculationPositions.out.json"
+            }
+        }
+    },
+    "actions": {
+        "get_absences__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch Absence for the given Absence ID",
+            "description": "Fetch Absence for the given Absence ID",
+            "callParams": {
+                "pathName": "/absences/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_absences__id_.in.json",
+                "out": "./lib/schemas/get_absences__id_.out.json"
+            }
+        },
+        "post_absences": {
+            "main": "./lib/actions/action.js",
+            "title": "Save Absence object",
+            "description": "Save Absence object",
+            "callParams": {
+                "pathName": "/absences",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_absences.in.json",
+                "out": "./lib/schemas/post_absences.out.json"
+            }
+        },
+        "put_absences__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update Absence object",
+            "description": "Update Absence object",
+            "callParams": {
+                "pathName": "/absences/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_absences__id_.in.json",
+                "out": "./lib/schemas/put_absences__id_.out.json"
+            }
+        },
+        "post_accountGroups": {
+            "main": "./lib/actions/action.js",
+            "title": "Save account groups object",
+            "description": "Save account groups object",
+            "callParams": {
+                "pathName": "/accountGroups",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_accountGroups.in.json",
+                "out": "./lib/schemas/post_accountGroups.out.json"
+            }
+        },
+        "get_accountGroups__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch Account Group for the given Account Group ID",
+            "description": "Fetch Account Group for the given Account Group ID",
+            "callParams": {
+                "pathName": "/accountGroups/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_accountGroups__id_.in.json",
+                "out": "./lib/schemas/get_accountGroups__id_.out.json"
+            }
+        },
+        "put_accountGroups__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update Account Groups Object",
+            "description": "Update Account Groups Object",
+            "callParams": {
+                "pathName": "/accountGroups/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_accountGroups__id_.in.json",
+                "out": "./lib/schemas/put_accountGroups__id_.out.json"
+            }
+        },
+        "delete_accountGroups__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete Absence Groups",
+            "description": "Delete Absence Groups",
+            "callParams": {
+                "pathName": "/accountGroups/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_accountGroups__id_.in.json",
+                "out": "./lib/schemas/delete_accountGroups__id_.out.json"
+            }
+        },
+        "post_accountingEntries": {
+            "main": "./lib/actions/action.js",
+            "title": "Save Accounting Entry Object",
+            "description": "Save Accounting Entry Object",
+            "callParams": {
+                "pathName": "/accountingEntries",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_accountingEntries.in.json",
+                "out": "./lib/schemas/post_accountingEntries.out.json"
+            }
+        },
+        "put_accountingEntries__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update Accounting Entry Object",
+            "description": "Update Accounting Entry Object",
+            "callParams": {
+                "pathName": "/accountingEntries/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_accountingEntries__id_.in.json",
+                "out": "./lib/schemas/put_accountingEntries__id_.out.json"
+            }
+        },
+        "delete_accountingEntries__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete Accounting Entry",
+            "description": "Delete Accounting Entry",
+            "callParams": {
+                "pathName": "/accountingEntries/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_accountingEntries__id_.in.json",
+                "out": "./lib/schemas/delete_accountingEntries__id_.out.json"
+            }
+        },
+        "get_accountingEntryCollections__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch accounting entry collection for the given accounting entry collection ID",
+            "description": "Fetch accounting entry collection for the given accounting entry collection ID",
+            "callParams": {
+                "pathName": "/accountingEntryCollections/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_accountingEntryCollections__id_.in.json",
+                "out": "./lib/schemas/get_accountingEntryCollections__id_.out.json"
+            }
+        },
+        "post_accountingEntryCollections": {
+            "main": "./lib/actions/action.js",
+            "title": "Save accounting entry collections",
+            "description": "Save accounting entry collections",
+            "callParams": {
+                "pathName": "/accountingEntryCollections",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_accountingEntryCollections.in.json",
+                "out": "./lib/schemas/post_accountingEntryCollections.out.json"
+            }
+        },
+        "put_accountingEntryCollections__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update accounting entry collection",
+            "description": "Update accounting entry collection",
+            "callParams": {
+                "pathName": "/accountingEntryCollections/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_accountingEntryCollections__id_.in.json",
+                "out": "./lib/schemas/put_accountingEntryCollections__id_.out.json"
+            }
+        },
+        "get_accountingEntries__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch Accounting Entry for the given Accounting Entry ID",
+            "description": "Fetch Accounting Entry for the given Accounting Entry ID",
+            "callParams": {
+                "pathName": "/accountingEntries/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_accountingEntries__id_.in.json",
+                "out": "./lib/schemas/get_accountingEntries__id_.out.json"
+            }
+        },
+        "delete_accountingEntryCollections__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete accounting entry collection",
+            "description": "Delete accounting entry collection",
+            "callParams": {
+                "pathName": "/accountingEntryCollections/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_accountingEntryCollections__id_.in.json",
+                "out": "./lib/schemas/delete_accountingEntryCollections__id_.out.json"
+            }
+        },
+        "delete_accounts__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete Account",
+            "description": "Delete Account",
+            "callParams": {
+                "pathName": "/accounts/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_accounts__id_.in.json",
+                "out": "./lib/schemas/delete_accounts__id_.out.json"
+            }
+        },
+        "put_accounts__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update Account",
+            "description": "Update Account",
+            "callParams": {
+                "pathName": "/accounts/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_accounts__id_.in.json",
+                "out": "./lib/schemas/put_accounts__id_.out.json"
+            }
+        },
+        "get_billings_hours__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch Billing for the given Billing ID",
+            "description": "Fetch Billing for the given Billing ID",
+            "callParams": {
+                "pathName": "/billings/hours/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_billings_hours__id_.in.json",
+                "out": "./lib/schemas/get_billings_hours__id_.out.json"
+            }
+        },
+        "get_bookingYears__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch Booking Year for the given ID",
+            "description": "Fetch Booking Year for the given ID",
+            "callParams": {
+                "pathName": "/bookingYears/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_bookingYears__id_.in.json",
+                "out": "./lib/schemas/get_bookingYears__id_.out.json"
+            }
+        },
+        "put_billings_hours__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update Billing",
+            "description": "Update Billing",
+            "callParams": {
+                "pathName": "/billings/hours/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_billings_hours__id_.in.json",
+                "out": "./lib/schemas/put_billings_hours__id_.out.json"
+            }
+        },
+        "delete_billings_hours__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete Billing",
+            "description": "Delete Billing",
+            "callParams": {
+                "pathName": "/billings/hours/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_billings_hours__id_.in.json",
+                "out": "./lib/schemas/delete_billings_hours__id_.out.json"
+            }
+        },
+        "post_bookingYears": {
+            "main": "./lib/actions/action.js",
+            "title": "Save Booking Year",
+            "description": "Save Booking Year",
+            "callParams": {
+                "pathName": "/bookingYears",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_bookingYears.in.json",
+                "out": "./lib/schemas/post_bookingYears.out.json"
+            }
+        },
+        "post_billings_hours": {
+            "main": "./lib/actions/action.js",
+            "title": "Save Billing",
+            "description": "Save Billing",
+            "callParams": {
+                "pathName": "/billings/hours",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_billings_hours.in.json",
+                "out": "./lib/schemas/post_billings_hours.out.json"
+            }
+        },
+        "delete_calculationPositions__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete calculation position",
+            "description": "Delete calculation position",
+            "callParams": {
+                "pathName": "/calculationPositions/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_calculationPositions__id_.in.json",
+                "out": "./lib/schemas/delete_calculationPositions__id_.out.json"
+            }
+        },
+        "put_bookingYears__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update Booking Year",
+            "description": "Update Booking Year",
+            "callParams": {
+                "pathName": "/bookingYears/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_bookingYears__id_.in.json",
+                "out": "./lib/schemas/put_bookingYears__id_.out.json"
+            }
+        },
+        "put_calculationPositions__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update calculation position",
+            "description": "Update calculation position",
+            "callParams": {
+                "pathName": "/calculationPositions/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_calculationPositions__id_.in.json",
+                "out": "./lib/schemas/put_calculationPositions__id_.out.json"
+            }
+        },
+        "post_calculationPositions": {
+            "main": "./lib/actions/action.js",
+            "title": "Save Calculation Position",
+            "description": "Save Calculation Position",
+            "callParams": {
+                "pathName": "/calculationPositions",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_calculationPositions.in.json",
+                "out": "./lib/schemas/post_calculationPositions.out.json"
+            }
+        },
+        "get_calendarEvents__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch calendar event for the given calendar event ID",
+            "description": "Fetch calendar event for the given calendar event ID",
+            "callParams": {
+                "pathName": "/calendarEvents/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_calendarEvents__id_.in.json",
+                "out": "./lib/schemas/get_calendarEvents__id_.out.json"
+            }
+        },
+        "post_calendarEvents": {
+            "main": "./lib/actions/action.js",
+            "title": "Save calendar event",
+            "description": "Save calendar event",
+            "callParams": {
+                "pathName": "/calendarEvents",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_calendarEvents.in.json",
+                "out": "./lib/schemas/post_calendarEvents.out.json"
+            }
+        },
+        "delete_calendarEvents__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete calendar event",
+            "description": "Delete calendar event",
+            "callParams": {
+                "pathName": "/calendarEvents/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_calendarEvents__id_.in.json",
+                "out": "./lib/schemas/delete_calendarEvents__id_.out.json"
+            }
+        },
+        "post_projects": {
+            "main": "./lib/actions/action.js",
+            "title": "Save project",
+            "description": "Save project",
+            "callParams": {
+                "pathName": "/projects",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_projects.in.json",
+                "out": "./lib/schemas/post_projects.out.json"
+            }
+        },
+        "put_calendarEvents__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update calendar event",
+            "description": "Update calendar event",
+            "callParams": {
+                "pathName": "/calendarEvents/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_calendarEvents__id_.in.json",
+                "out": "./lib/schemas/put_calendarEvents__id_.out.json"
+            }
+        },
+        "post_accounts": {
+            "main": "./lib/actions/action.js",
+            "title": "Save Account",
+            "description": "Save Account",
+            "callParams": {
+                "pathName": "/accounts",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_accounts.in.json",
+                "out": "./lib/schemas/post_accounts.out.json"
+            }
+        },
+        "put_projects__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update project",
+            "description": "Update project",
+            "callParams": {
+                "pathName": "/projects/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_projects__id_.in.json",
+                "out": "./lib/schemas/put_projects__id_.out.json"
+            }
+        },
+        "delete_projects__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete project",
+            "description": "Delete project",
+            "callParams": {
+                "pathName": "/projects/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_projects__id_.in.json",
+                "out": "./lib/schemas/delete_projects__id_.out.json"
+            }
+        },
+        "put_calendarEventParticipants__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update calendar event participant",
+            "description": "Update calendar event participant",
+            "callParams": {
+                "pathName": "/calendarEventParticipants/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_calendarEventParticipants__id_.in.json",
+                "out": "./lib/schemas/put_calendarEventParticipants__id_.out.json"
+            }
+        },
+        "get_accounts__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch Account given Account ID",
+            "description": "Fetch Account given Account ID",
+            "callParams": {
+                "pathName": "/accounts/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_accounts__id_.in.json",
+                "out": "./lib/schemas/get_accounts__id_.out.json"
+            }
+        },
+        "get_projects__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch project for the given project ID",
+            "description": "Fetch project for the given project ID",
+            "callParams": {
+                "pathName": "/projects/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_projects__id_.in.json",
+                "out": "./lib/schemas/get_projects__id_.out.json"
+            }
+        },
+        "get_calendarEventParticipants__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch calendar event participant for the given calendar event participant ID",
+            "description": "Fetch calendar event participant for the given calendar event participant ID",
+            "callParams": {
+                "pathName": "/calendarEventParticipants/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_calendarEventParticipants__id_.in.json",
+                "out": "./lib/schemas/get_calendarEventParticipants__id_.out.json"
+            }
+        },
+        "get_clients__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch client for the given client ID",
+            "description": "Fetch client for the given client ID",
+            "callParams": {
+                "pathName": "/clients/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_clients__id_.in.json",
+                "out": "./lib/schemas/get_clients__id_.out.json"
+            }
+        },
+        "delete_bookingYears__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete Booking Year",
+            "description": "Delete Booking Year",
+            "callParams": {
+                "pathName": "/bookingYears/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_bookingYears__id_.in.json",
+                "out": "./lib/schemas/delete_bookingYears__id_.out.json"
+            }
+        },
+        "get_calculationPositions__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch calculation position for the given calculation position ID",
+            "description": "Fetch calculation position for the given calculation position ID",
+            "callParams": {
+                "pathName": "/calculationPositions/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_calculationPositions__id_.in.json",
+                "out": "./lib/schemas/get_calculationPositions__id_.out.json"
+            }
+        },
+        "delete_calendarEventParticipants__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete calendar event participant",
+            "description": "Delete calendar event participant",
+            "callParams": {
+                "pathName": "/calendarEventParticipants/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_calendarEventParticipants__id_.in.json",
+                "out": "./lib/schemas/delete_calendarEventParticipants__id_.out.json"
+            }
+        },
+        "post_contactCategories": {
+            "main": "./lib/actions/action.js",
+            "title": "Save contact category",
+            "description": "Save contact category",
+            "callParams": {
+                "pathName": "/contactCategories",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_contactCategories.in.json",
+                "out": "./lib/schemas/post_contactCategories.out.json"
+            }
+        },
+        "get_contactCategories__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch contact categorie by ID",
+            "description": "Fetch contact categorie by ID",
+            "callParams": {
+                "pathName": "/contactCategories/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_contactCategories__id_.in.json",
+                "out": "./lib/schemas/get_contactCategories__id_.out.json"
+            }
+        },
+        "delete_contactCategories__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete contact categorie",
+            "description": "Delete contact categorie",
+            "callParams": {
+                "pathName": "/contactCategories/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_contactCategories__id_.in.json",
+                "out": "./lib/schemas/delete_contactCategories__id_.out.json"
+            }
+        },
+        "delete_contacts__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Delete contact",
+            "description": "Delete contact",
+            "callParams": {
+                "pathName": "/contacts/{id}",
+                "method": "delete"
+            },
+            "metadata": {
+                "in": "./lib/schemas/delete_contacts__id_.in.json",
+                "out": "./lib/schemas/delete_contacts__id_.out.json"
+            }
+        },
+        "put_contactCategories__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update contact categorie",
+            "description": "Update contact categorie",
+            "callParams": {
+                "pathName": "/contactCategories/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_contactCategories__id_.in.json",
+                "out": "./lib/schemas/put_contactCategories__id_.out.json"
+            }
+        },
+        "get_contacts__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch contact for the given ID",
+            "description": "Fetch contact for the given ID",
+            "callParams": {
+                "pathName": "/contacts/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_contacts__id_.in.json",
+                "out": "./lib/schemas/get_contacts__id_.out.json"
+            }
+        },
+        "post_calendarEventParticipants": {
+            "main": "./lib/actions/action.js",
+            "title": "Save calendar event participants",
+            "description": "Save calendar event participants",
+            "callParams": {
+                "pathName": "/calendarEventParticipants",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_calendarEventParticipants.in.json",
+                "out": "./lib/schemas/post_calendarEventParticipants.out.json"
+            }
+        },
+        "get_customers__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch customer for the given customer ID",
+            "description": "Fetch customer for the given customer ID",
+            "callParams": {
+                "pathName": "/customers/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_customers__id_.in.json",
+                "out": "./lib/schemas/get_customers__id_.out.json"
+            }
+        },
+        "post_customers": {
+            "main": "./lib/actions/action.js",
+            "title": "Save customer",
+            "description": "Save customer",
+            "callParams": {
+                "pathName": "/customers",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_customers.in.json",
+                "out": "./lib/schemas/post_customers.out.json"
+            }
+        },
+        "put_customers__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update customer",
+            "description": "Update customer",
+            "callParams": {
+                "pathName": "/customers/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_customers__id_.in.json",
+                "out": "./lib/schemas/put_customers__id_.out.json"
+            }
+        },
+        "get_suppliers__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Fetch supplier for the given supplier ID",
+            "description": "Fetch supplier for the given supplier ID",
+            "callParams": {
+                "pathName": "/suppliers/{id}",
+                "method": "get"
+            },
+            "metadata": {
+                "in": "./lib/schemas/get_suppliers__id_.in.json",
+                "out": "./lib/schemas/get_suppliers__id_.out.json"
+            }
+        },
+        "post_suppliers": {
+            "main": "./lib/actions/action.js",
+            "title": "Save supplier",
+            "description": "Save supplier",
+            "callParams": {
+                "pathName": "/suppliers",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_suppliers.in.json",
+                "out": "./lib/schemas/post_suppliers.out.json"
+            }
+        },
+        "put_contacts__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update contact",
+            "description": "Update contact",
+            "callParams": {
+                "pathName": "/contacts/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_contacts__id_.in.json",
+                "out": "./lib/schemas/put_contacts__id_.out.json"
+            }
+        },
+        "post_contacts": {
+            "main": "./lib/actions/action.js",
+            "title": "Save contact",
+            "description": "Save contact",
+            "callParams": {
+                "pathName": "/contacts",
+                "method": "post",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/post_contacts.in.json",
+                "out": "./lib/schemas/post_contacts.out.json"
+            }
+        },
+        "put_suppliers__id_": {
+            "main": "./lib/actions/action.js",
+            "title": "Update supplier",
+            "description": "Update supplier",
+            "callParams": {
+                "pathName": "/suppliers/{id}",
+                "method": "put",
+                "requestContentType": "application/json"
+            },
+            "metadata": {
+                "in": "./lib/schemas/put_suppliers__id_.in.json",
+                "out": "./lib/schemas/put_suppliers__id_.out.json"
+            }
+        }
+    }
+}

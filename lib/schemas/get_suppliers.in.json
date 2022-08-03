@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "clientId": {
+            "required": true,
+            "type": "integer",
+            "example": 1
+        },
+        "returnApiSyncItems": {
+            "type": "boolean",
+            "example": false
+        },
+        "search": {
+            "type": "string",
+            "example": "Troi"
+        },
+        "isActive": {
+            "type": "boolean",
+            "example": true
+        },
+        "showReferenceDetails": {
+            "type": "boolean",
+            "example": true
+        }
+    }
+}

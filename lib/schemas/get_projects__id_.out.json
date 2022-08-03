@@ -1,0 +1,1089 @@
+{
+    "type": "object",
+    "properties": {
+        "Name": {
+            "type": "string",
+            "example": "Website"
+        },
+        "Number": {
+            "type": "string",
+            "example": "TROI-2020-001"
+        },
+        "Client": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string",
+                    "example": "ApiExample"
+                },
+                "Name": {
+                    "type": "string",
+                    "example": "Example"
+                },
+                "IsFavorite": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "IsPrintable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ParentPath": {
+                    "type": "string",
+                    "example": null
+                },
+                "ReeEmployeeId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeCpId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeSubProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeQuantity": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeDate": {
+                    "type": "object",
+                    "example": null
+                },
+                "ReeServiceId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Path": {
+                    "type": "string",
+                    "example": "/exampleItem/33"
+                },
+                "ETag": {
+                    "type": "integer",
+                    "example": 20190424205858
+                },
+                "IsDeleted": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiSyncItem"
+                }
+            }
+        },
+        "Customer": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string",
+                    "example": "ApiExample"
+                },
+                "Name": {
+                    "type": "string",
+                    "example": "Example"
+                },
+                "IsFavorite": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "IsPrintable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ParentPath": {
+                    "type": "string",
+                    "example": null
+                },
+                "ReeEmployeeId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeCpId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeSubProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeQuantity": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeDate": {
+                    "type": "object",
+                    "example": null
+                },
+                "ReeServiceId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Path": {
+                    "type": "string",
+                    "example": "/exampleItem/33"
+                },
+                "ETag": {
+                    "type": "integer",
+                    "example": 20190424205858
+                },
+                "IsDeleted": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiSyncItem"
+                }
+            }
+        },
+        "ExternalDescription": {
+            "type": "string",
+            "example": "Expedita quia nobis dolorem voluptatibus est. Voluptatibus dolor ut aperiam iste et aut consectetur.\nVoluptas quia qui doloremque dolore non sed. Aperiam distinctio omnis iure et qui nesciunt.\n"
+        },
+        "InternalDescription": {
+            "type": "string",
+            "example": "Expedita quia nobis dolorem voluptatibus est. Voluptatibus dolor ut aperiam iste et aut consectetur.\nVoluptas quia qui doloremque dolore non sed. Aperiam distinctio omnis iure et qui nesciunt.\n"
+        },
+        "Status": {
+            "oneOf": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "Type": {
+                            "type": "string",
+                            "example": "ApiExample"
+                        },
+                        "Name": {
+                            "type": "string",
+                            "example": "Example"
+                        },
+                        "IsFavorite": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "IsPrintable": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ParentPath": {
+                            "type": "string",
+                            "example": null
+                        },
+                        "ReeEmployeeId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeCpId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeSubProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeQuantity": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeDate": {
+                            "type": "object",
+                            "example": null
+                        },
+                        "ReeServiceId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Path": {
+                            "type": "string",
+                            "example": "/exampleItem/33"
+                        },
+                        "ETag": {
+                            "type": "integer",
+                            "example": 20190424205858
+                        },
+                        "IsDeleted": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ClassName": {
+                            "type": "string",
+                            "example": "ApiSyncItem"
+                        }
+                    }
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "Name": {
+                            "type": "string",
+                            "example": "abgeschlossen"
+                        },
+                        "IsDefault": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "IsBlockedForTimeRecording": {
+                            "type": "boolean",
+                            "example": true
+                        },
+                        "IsBlockedForBookkeeping": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "IsVisibleInDropdown": {
+                            "type": "boolean",
+                            "example": true
+                        },
+                        "Id": {
+                            "type": "integer",
+                            "example": 1
+                        },
+                        "Path": {
+                            "type": "string"
+                        },
+                        "IsDeleted": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ClassName": {
+                            "type": "string",
+                            "example": "ApiProjectStatus"
+                        }
+                    }
+                }
+            ]
+        },
+        "Currency": {
+            "type": "object",
+            "properties": {
+                "Root": {
+                    "type": "object",
+                    "properties": {
+                        "Type": {
+                            "type": "string",
+                            "example": "ApiExample"
+                        },
+                        "Name": {
+                            "type": "string",
+                            "example": "Example"
+                        },
+                        "IsFavorite": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "IsPrintable": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ParentPath": {
+                            "type": "string",
+                            "example": null
+                        },
+                        "ReeEmployeeId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeCpId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeSubProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeQuantity": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeDate": {
+                            "type": "object",
+                            "example": null
+                        },
+                        "ReeServiceId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Path": {
+                            "type": "string",
+                            "example": "/exampleItem/33"
+                        },
+                        "ETag": {
+                            "type": "integer",
+                            "example": 20190424205858
+                        },
+                        "IsDeleted": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ClassName": {
+                            "type": "string",
+                            "example": "ApiSyncItem"
+                        }
+                    }
+                },
+                "Client": {
+                    "type": "object",
+                    "properties": {
+                        "Type": {
+                            "type": "string",
+                            "example": "ApiExample"
+                        },
+                        "Name": {
+                            "type": "string",
+                            "example": "Example"
+                        },
+                        "IsFavorite": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "IsPrintable": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ParentPath": {
+                            "type": "string",
+                            "example": null
+                        },
+                        "ReeEmployeeId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeCpId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeSubProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeQuantity": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeDate": {
+                            "type": "object",
+                            "example": null
+                        },
+                        "ReeServiceId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Path": {
+                            "type": "string",
+                            "example": "/exampleItem/33"
+                        },
+                        "ETag": {
+                            "type": "integer",
+                            "example": 20190424205858
+                        },
+                        "IsDeleted": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ClassName": {
+                            "type": "string",
+                            "example": "ApiSyncItem"
+                        }
+                    }
+                },
+                "Customer": {
+                    "type": "object",
+                    "properties": {
+                        "Type": {
+                            "type": "string",
+                            "example": "ApiExample"
+                        },
+                        "Name": {
+                            "type": "string",
+                            "example": "Example"
+                        },
+                        "IsFavorite": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "IsPrintable": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ParentPath": {
+                            "type": "string",
+                            "example": null
+                        },
+                        "ReeEmployeeId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeCpId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeSubProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeQuantity": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeDate": {
+                            "type": "object",
+                            "example": null
+                        },
+                        "ReeServiceId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Path": {
+                            "type": "string",
+                            "example": "/exampleItem/33"
+                        },
+                        "ETag": {
+                            "type": "integer",
+                            "example": 20190424205858
+                        },
+                        "IsDeleted": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ClassName": {
+                            "type": "string",
+                            "example": "ApiSyncItem"
+                        }
+                    }
+                },
+                "Project": {
+                    "type": "object",
+                    "properties": {
+                        "Type": {
+                            "type": "string",
+                            "example": "ApiExample"
+                        },
+                        "Name": {
+                            "type": "string",
+                            "example": "Example"
+                        },
+                        "IsFavorite": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "IsPrintable": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ParentPath": {
+                            "type": "string",
+                            "example": null
+                        },
+                        "ReeEmployeeId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeCpId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeSubProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeProjectId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeQuantity": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "ReeDate": {
+                            "type": "object",
+                            "example": null
+                        },
+                        "ReeServiceId": {
+                            "type": "integer",
+                            "example": 0
+                        },
+                        "id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Id": {
+                            "type": "integer",
+                            "example": 33
+                        },
+                        "Path": {
+                            "type": "string",
+                            "example": "/exampleItem/33"
+                        },
+                        "ETag": {
+                            "type": "integer",
+                            "example": 20190424205858
+                        },
+                        "IsDeleted": {
+                            "type": "boolean",
+                            "example": false
+                        },
+                        "ClassName": {
+                            "type": "string",
+                            "example": "ApiSyncItem"
+                        }
+                    }
+                },
+                "DecimalMark": {
+                    "type": "string",
+                    "example": ","
+                },
+                "ThousandsMark": {
+                    "type": "string",
+                    "example": "."
+                },
+                "LongName": {
+                    "type": "string",
+                    "example": "Euro"
+                },
+                "Symbol": {
+                    "type": "string",
+                    "example": "EUR"
+                },
+                "Position": {
+                    "type": "string",
+                    "example": "1",
+                    "enum": [
+                        0,
+                        1
+                    ]
+                },
+                "Precision": {
+                    "type": "string",
+                    "example": "1.00"
+                },
+                "ExchangeRate": {
+                    "type": "string",
+                    "example": "1.00000"
+                },
+                "IsSystem": {
+                    "type": "string",
+                    "example": "0"
+                },
+                "Id": {
+                    "type": "integer",
+                    "example": 1
+                },
+                "Path": {
+                    "type": "string",
+                    "example": "/misc/currencies/1"
+                },
+                "ETag": {
+                    "type": "string"
+                },
+                "IsDeleted": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiCurrency"
+                }
+            }
+        },
+        "IsApproved": {
+            "type": "boolean",
+            "example": true
+        },
+        "IsBlocked": {
+            "type": "boolean",
+            "example": false
+        },
+        "BlockedBy": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string",
+                    "example": "ApiExample"
+                },
+                "Name": {
+                    "type": "string",
+                    "example": "Example"
+                },
+                "IsFavorite": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "IsPrintable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ParentPath": {
+                    "type": "string",
+                    "example": null
+                },
+                "ReeEmployeeId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeCpId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeSubProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeQuantity": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeDate": {
+                    "type": "object",
+                    "example": null
+                },
+                "ReeServiceId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Path": {
+                    "type": "string",
+                    "example": "/exampleItem/33"
+                },
+                "ETag": {
+                    "type": "integer",
+                    "example": 20190424205858
+                },
+                "IsDeleted": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiSyncItem"
+                }
+            }
+        },
+        "Leader": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string",
+                    "example": "ApiExample"
+                },
+                "Name": {
+                    "type": "string",
+                    "example": "Example"
+                },
+                "IsFavorite": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "IsPrintable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ParentPath": {
+                    "type": "string",
+                    "example": null
+                },
+                "ReeEmployeeId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeCpId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeSubProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeQuantity": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeDate": {
+                    "type": "object",
+                    "example": null
+                },
+                "ReeServiceId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Path": {
+                    "type": "string",
+                    "example": "/exampleItem/33"
+                },
+                "ETag": {
+                    "type": "integer",
+                    "example": 20190424205858
+                },
+                "IsDeleted": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiSyncItem"
+                }
+            }
+        },
+        "Team": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string",
+                    "example": "ApiExample"
+                },
+                "Name": {
+                    "type": "string",
+                    "example": "Example"
+                },
+                "IsFavorite": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "IsPrintable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ParentPath": {
+                    "type": "string",
+                    "example": null
+                },
+                "ReeEmployeeId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeCpId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeSubProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeQuantity": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeDate": {
+                    "type": "object",
+                    "example": null
+                },
+                "ReeServiceId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Path": {
+                    "type": "string",
+                    "example": "/exampleItem/33"
+                },
+                "ETag": {
+                    "type": "integer",
+                    "example": 20190424205858
+                },
+                "IsDeleted": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiSyncItem"
+                }
+            }
+        },
+        "TypeId": {
+            "type": "integer",
+            "example": 0
+        },
+        "TaxRateId": {
+            "type": "integer",
+            "example": 0
+        },
+        "ProjectFolderId": {
+            "type": "integer",
+            "example": 0
+        },
+        "ForeignServicesCpIp": {
+            "type": "integer",
+            "example": 0
+        },
+        "ProjectTypes": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "Name": {
+                        "type": "string",
+                        "example": "In Arbeit"
+                    },
+                    "Id": {
+                        "type": "integer",
+                        "example": 1
+                    },
+                    "Path": {
+                        "type": "string"
+                    },
+                    "ETag": {
+                        "type": "string"
+                    },
+                    "IsDeleted": {
+                        "type": "boolean",
+                        "example": false
+                    },
+                    "ClassName": {
+                        "type": "string",
+                        "example": "ApiProjectType"
+                    }
+                }
+            }
+        },
+        "Contact": {
+            "type": "object",
+            "properties": {
+                "Type": {
+                    "type": "string",
+                    "example": "ApiExample"
+                },
+                "Name": {
+                    "type": "string",
+                    "example": "Example"
+                },
+                "IsFavorite": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "IsPrintable": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ParentPath": {
+                    "type": "string",
+                    "example": null
+                },
+                "ReeEmployeeId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeCpId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeSubProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeProjectId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeQuantity": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "ReeDate": {
+                    "type": "object",
+                    "example": null
+                },
+                "ReeServiceId": {
+                    "type": "integer",
+                    "example": 0
+                },
+                "id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Id": {
+                    "type": "integer",
+                    "example": 33
+                },
+                "Path": {
+                    "type": "string",
+                    "example": "/exampleItem/33"
+                },
+                "ETag": {
+                    "type": "integer",
+                    "example": 20190424205858
+                },
+                "IsDeleted": {
+                    "type": "boolean",
+                    "example": false
+                },
+                "ClassName": {
+                    "type": "string",
+                    "example": "ApiSyncItem"
+                }
+            }
+        },
+        "InvoiceRecipientId": {
+            "type": "integer",
+            "example": 0
+        },
+        "InvoiceRecipientPersonId": {
+            "type": "integer",
+            "example": 0
+        },
+        "ReportingDate": {
+            "type": "string",
+            "example": "31.12.2020"
+        },
+        "ApprovedDate": {
+            "type": "string",
+            "example": "31.12.2020"
+        },
+        "CreatedBy": {
+            "type": "string",
+            "example": 56
+        },
+        "ModifiedBy": {
+            "type": "string",
+            "example": 56
+        },
+        "DeletedBy": {
+            "type": "string",
+            "example": 56
+        },
+        "CreatedAt": {
+            "type": "string",
+            "example": "2020-12-31T00:00:00.000Z"
+        },
+        "ModifiedAt": {
+            "type": "string",
+            "example": "2020-12-31T00:00:00.000Z"
+        },
+        "DeletedAt": {
+            "type": "string",
+            "example": "1899-11-30T00:00:00.000Z"
+        },
+        "projectIssueTrackerProjectKey": {
+            "type": "string"
+        },
+        "Id": {
+            "type": "integer",
+            "example": 1
+        },
+        "Path": {
+            "type": "string",
+            "example": "/projects/1"
+        },
+        "ETag": {
+            "type": "string",
+            "example": 20190313153646
+        },
+        "IsDeleted": {
+            "type": "boolean",
+            "example": false
+        },
+        "ClassName": {
+            "type": "string",
+            "example": "ApiProject"
+        }
+    }
+}
