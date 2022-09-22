@@ -1,6 +1,10 @@
 {
     "type": "object",
     "properties": {
+        "ExternalId": {
+            "type": "string",
+            "example": "1adb3f"
+        },
         "Type": {
             "type": "string",
             "example": "ApiContact:Person",

@@ -21019,6 +21019,9 @@
                                     {
                                         "type": "object",
                                         "properties": {
+                                            "ExternalId": {
+                                                "type": "string"
+                                            },
                                             "Start": {
                                                 "type": "string",
                                                 "description": "yyyy-mm-dd hh:mm:ss",
@@ -21990,6 +21993,9 @@
                             "schema": {
                                 "type": "object",
                                 "properties": {
+                                    "ExternalId": {
+                                        "type": "string"
+                                    },
                                     "Start": {
                                         "type": "string",
                                         "description": "yyyy-mm-dd hh:mm:ss",
@@ -30780,6 +30786,9 @@
                                     {
                                         "type": "object",
                                         "properties": {
+                                            "ExternalId": {
+                                                "type": "string"
+                                            },
                                             "Type": {
                                                 "type": "string",
                                                 "example": "ApiContact:Person",
@@ -32435,6 +32444,9 @@
                             "schema": {
                                 "type": "object",
                                 "properties": {
+                                    "ExternalId": {
+                                        "type": "string"
+                                    },
                                     "Type": {
                                         "type": "string",
                                         "example": "ApiContact:Person",

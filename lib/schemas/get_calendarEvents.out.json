@@ -3,6 +3,10 @@
     "items": {
         "type": "object",
         "properties": {
+            "ExternalId": {
+                "type": "string",
+                "example": "1adb3f"
+            },
             "Start": {
                 "type": "string",
                 "description": "yyyy-mm-dd hh:mm:ss",
